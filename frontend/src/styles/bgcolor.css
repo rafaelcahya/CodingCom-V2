@@ -1,0 +1,32 @@
+:root {
+    --purple: #B983FF;
+    --purple25: rgba(185, 131, 255, .25);
+    --lightblue: #94B3FD;
+    --lightblue15: rgba(148, 179, 253, .15);
+    --blue: #548CFF;
+    --pink: #FF87CA;
+}
+
+.bg-purple{
+    background-color: var(--purple);
+}
+
+.bg-purple-25{
+    background-color: var(--purple25);
+}
+
+.bg-lightblue{
+    background-color: var(--lightblue);
+}
+
+.bg-lightblue-15{
+    background-color: var(--lightblue15);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.bg-gradient-purple-to-pink{
+    background-image: linear-gradient(to right, var(--purple), var(--pink));
+}
