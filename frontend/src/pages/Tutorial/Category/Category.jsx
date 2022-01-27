@@ -16,7 +16,7 @@ export const Category = () => {
                 <p className='poppins-600 text-25 bg-gradient-purple-to-pink text-white px-16 py-16 mt-16 rounded-2xl text-left'>Tutorial / Internet</p>
                 <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 my-16'>
                     <Link to="/tutorial/category/learning">
-                        <div className='text-16 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
+                        <div className='text-15 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
                             <div className='lato-700 blue flex justify-end items-center gap-2'>
                                 <img src={book} alt="" />
                                 <p>25</p>
@@ -36,7 +36,7 @@ export const Category = () => {
                         </div>
                     </Link>
                     <Link to="/tutorial/category/learning">
-                        <div className='text-16 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
+                        <div className='text-15 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
                             <div className='lato-700 blue flex justify-end items-center gap-2'>
                                 <img src={book} alt="" />
                                 <p>25</p>
@@ -56,7 +56,7 @@ export const Category = () => {
                         </div>
                     </Link>
                     <Link to="/tutorial/category/learning">
-                        <div className='text-16 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
+                        <div className='text-15 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
                             <div className='lato-700 blue flex justify-end items-center gap-2'>
                                 <img src={book} alt="" />
                                 <p>25</p>
@@ -76,7 +76,7 @@ export const Category = () => {
                         </div>
                     </Link>
                     <Link to="/tutorial/category/learning">
-                        <div className='text-16 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
+                        <div className='text-15 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
                             <div className='lato-700 blue flex justify-end items-center gap-2'>
                                 <img src={book} alt="" />
                                 <p>25</p>
@@ -96,7 +96,7 @@ export const Category = () => {
                         </div>
                     </Link>
                     <Link to="/tutorial/category/learning">
-                        <div className='text-16 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
+                        <div className='text-15 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
                             <div className='lato-700 blue flex justify-end items-center gap-2'>
                                 <img src={book} alt="" />
                                 <p>25</p>
@@ -116,7 +116,7 @@ export const Category = () => {
                         </div>
                     </Link>
                     <Link to="/tutorial/category/learning">
-                        <div className='text-16 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
+                        <div className='text-15 flex flex-col gap-5 justify-center rounded-2xl shadow-sm shadow-blue-100     hover:shadow-lg hover:shadow-blue-100 transition-shadow cursor-pointer p-5'>
                             <div className='lato-700 blue flex justify-end items-center gap-2'>
                                 <img src={book} alt="" />
                                 <p>25</p>

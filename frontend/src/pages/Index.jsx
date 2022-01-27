@@ -16,6 +16,7 @@ import { Homepage } from './Homepage/Homepage'
 import { Tutorial } from './Tutorial/Tutorial'
 import { Category } from './Tutorial/Category/Category'
 import { Learning } from './Tutorial/Category/Learning/Learning'
+import CaseStudy from './Case study/CaseStudy'
 
 export const Index = () => {
     return (
@@ -25,9 +26,10 @@ export const Index = () => {
                 <Route path="/signin" element={<Signin/>} />
                 <Route path="/signup" element={<Signup/>} />
                 <Route path="/reset-password" element={<ResetPassword/>} />
-                <Route path="/tutorial" exact element={<Tutorial/>} />
-                <Route path="/tutorial/category" exact element={<Category/>} />
-                <Route path="/tutorial/category/learning" exact element={<Learning/>} />
+                <Route path="/tutorial" element={<Tutorial/>} />
+                <Route path="/tutorial/category" element={<Category/>} />
+                <Route path="/tutorial/category/learning" element={<Learning/>} />
+                <Route path="/case-study" element={<CaseStudy/>} />
             </Routes>
         </Router>
     )

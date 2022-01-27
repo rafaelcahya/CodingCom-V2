@@ -10,7 +10,7 @@ export const Navbar = () => {
                 <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-5 md:gap-10'>
                         <p>Logo</p>
-                        <p className='text-16'>William Kosasie</p>
+                        <p className='text-15'>William Kosasie</p>
                     </div>
                     <div className='bg-gray-200 p-3 rounded-full'>
                         <img src={user_icon} alt="" width={15}/>
@@ -18,7 +18,7 @@ export const Navbar = () => {
                 </div>
                 <div className='flex items-start'>
                     <Link to="/tutorial"><p>Tutorial</p></Link>
-                    <p>Case Study</p>
+                    <Link to="/case-study"><p>Case Study</p></Link>
                     <p>Class</p>
                 </div>
             </div>

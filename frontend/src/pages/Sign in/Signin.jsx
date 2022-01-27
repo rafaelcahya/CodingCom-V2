@@ -13,7 +13,7 @@ export const Signin = () => {
                     <p>Welcome</p>
                     <p>Sign In to Project Coding</p>
                 </div>
-                <form className='poppins text-16 letterspacing-1 flex flex-col gap-5 sm:gap-10'>
+                <form className='poppins text-15 letterspacing-1 flex flex-col gap-5 sm:gap-10'>
                     <div className='flex flex-col gap-5 sm:gap-10'>
                         <div className='flex flex-col items-start gap-3'>
                             <label htmlFor="">Username or Email</label>

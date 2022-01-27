@@ -8,7 +8,7 @@ export const ResetPassword = () => {
         <>
             <div className='black flex flex-col items-center gap-10 pt-10 pb-20'>
                 <p className='poppins-600 text-25 letterspacing-1 capitalize'>reset password</p>
-                <form className='poppins text-16 letterspacing-1 flex flex-col gap-5 sm:gap-10'>
+                <form className='poppins text-15 letterspacing-1 flex flex-col gap-5 sm:gap-10'>
                     <div className='flex flex-col sm:flex-row gap-5 sm:gap-10'>
                         <div className='flex flex-col items-start gap-3'>
                             <label htmlFor="">Email</label>
