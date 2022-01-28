@@ -17,6 +17,8 @@ import { Tutorial } from './Tutorial/Tutorial'
 import { Category } from './Tutorial/Category/Category'
 import { Learning } from './Tutorial/Category/Learning/Learning'
 import CaseStudy from './Case study/CaseStudy'
+import CaseStudyDetail from './Case study/CaseStudyDetail'
+import Submit from './Case study/Submit/Submit'
 
 export const Index = () => {
     return (
@@ -30,6 +32,8 @@ export const Index = () => {
                 <Route path="/tutorial/category" element={<Category/>} />
                 <Route path="/tutorial/category/learning" element={<Learning/>} />
                 <Route path="/case-study" element={<CaseStudy/>} />
+                <Route path="/case-study/detail" element={<CaseStudyDetail/>} />
+                <Route path="/submit" element={<Submit/>} />
             </Routes>
         </Router>
     )

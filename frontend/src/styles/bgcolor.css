@@ -30,3 +30,8 @@
 .bg-gradient-purple-to-pink{
     background-image: linear-gradient(to right, var(--purple), var(--pink));
 }
+
+
+.bg-gradient-purple-to-purple{
+    background-image: linear-gradient(to right, var(--purple), var(--pink));
+}

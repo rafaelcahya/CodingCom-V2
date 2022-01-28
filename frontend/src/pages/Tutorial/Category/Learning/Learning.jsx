@@ -1,4 +1,6 @@
 import React from 'react';
+
+import NavbarMaterial from '../../components/major/NavbarMaterial';
 import { Footer } from '../../../../component/major/Footer';
 import { Navbar } from '../../../../component/major/Navbar';
 
@@ -6,10 +8,8 @@ import chevron_left from '../../../../asset/icon/chevron-left.svg'
 import clock from '../../../../asset/icon/clock.svg'
 import calendar from '../../../../asset/icon/calendar.svg'
 import link from '../../../../asset/icon/link.svg'
-
 import profile from '../../../../asset/Images/profile.png'
 import learning from '../../../../asset/Images/learning.png'
-import NavbarMaterial from '../../components/major/NavbarMaterial';
 
 export const Learning = () => {
     return (
@@ -29,10 +29,10 @@ export const Learning = () => {
                                         <img src={profile} alt="" width={50}/>
                                         <div className='flex flex-col gap-1 text-left'>
                                             <p className='text-15 poppins-600'>Nadia Catherine</p>
-                                            <p className='text-14 poppins gray2'>Content Creator at Medium</p>
+                                            <p className='text-13 poppins gray2'>Content Creator at Medium</p>
                                         </div>
                                     </div>
-                                    <div className='poppins text-14 flex flex-col gap-2'>
+                                    <div className='poppins text-13 flex flex-col gap-2'>
                                         <div className='flex items-center gap-2'>
                                             <img src={clock} alt="" width={20}/>
                                             <p>10 mins to read</p>
@@ -42,7 +42,7 @@ export const Learning = () => {
                                             <p>19 January 2022</p>
                                         </div>
                                     </div>
-                                    <div className='poppins text-14 flex flex-col gap-2 text-left'>
+                                    <div className='poppins text-13 flex flex-col gap-2 text-left'>
                                         <p>Share</p>
                                         <div className='bg-purple-25 p-3 rounded-full w-fit'>
                                             <img src={link} alt="" width={17}/>
