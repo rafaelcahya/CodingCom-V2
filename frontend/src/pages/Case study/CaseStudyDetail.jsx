@@ -10,16 +10,16 @@ export default function CaseStudyDetail() {
     return (
         <>
             <Navbar/>
-            <div className='flex flex-col gap-20 px-5 md:px-20 lg:px-32 black'>
+            <div className='flex flex-col gap-20 mx-5 md:mx-16 black'>
                 <div className='poppins-600 text-18 bg-gradient-purple-to-pink text-white flex items-center gap-5 px-16 py-10 mt-16 rounded-2xl text-left'>
                     <p>Lorem Ipsum is simply dummy text</p>
                 </div>
                 <div className='flex gap-32'>
                     <div className='w-full lg:w-4/5'>
-                        <div className='w-full'>
+                        <div className=''>
                             <img src={image} alt="" className='rounded-xl'/>
                         </div>
-                        <div className='flex flex-col gap-10 text-left my-10 w-4/5 lg:w-3/4 max-h-96'>
+                        <div className='flex flex-col gap-10 text-left my-10 w-full lg:w-3/4 max-h-96'>
                             <p className='poppins-600 text-18'>Getting Started</p>
                             <p className='poppins text-15 letterspacing-1 leading-7'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
                         </div>

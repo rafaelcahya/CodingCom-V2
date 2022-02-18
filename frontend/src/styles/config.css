@@ -1,0 +1,62 @@
+:root{
+    --black: #495057;
+    --purple: #AB59FF;
+    --pink: #ED65FF;
+}
+
+/* Text color */
+
+.black{
+    color: var(--black);
+}
+
+.purple{
+    color: var(--purple);
+}
+
+/* Font size */
+
+.text-14{
+    font-size: 14px; /* 16px */
+}
+
+.text-16{
+    font-size: 16px; /* 20px */
+}
+
+.text-31{
+    font-size: 31px; /* 39px */
+}
+
+/* letter spacing */
+
+.letter-spacing-1{
+    letter-spacing: .5px;
+}
+
+/* background */
+
+.bg-gradient-purple-to-pink{
+    background: linear-gradient(90deg, var(--purple) 0%, var(--pink) 100%);
+}
+
+/* box shadow */
+
+.box-shadow{
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+}
+
+.card{
+    background-color: none;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.card_anim{
+    transform: translateY(0);
+    border-radius: 1rem;
+}
+
+.card_anim:hover{
+    transform: translateY(-25px);
+}

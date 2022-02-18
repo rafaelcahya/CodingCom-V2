@@ -6,7 +6,7 @@ import user_icon from '../../asset/icon/user.svg'
 export const Navbar = () => {
     return (
         <>
-            <div className='poppins black flex flex-col gap-5 px-5 md:px-20 lg:px-32 py-5'>
+            <div className='poppins black flex flex-col gap-5 px-5 md:px-16 py-5'>
                 <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-5 md:gap-10'>
                         <p>Logo</p>
@@ -19,7 +19,7 @@ export const Navbar = () => {
                 <div className='flex items-start'>
                     <Link to="/tutorial"><p>Tutorial</p></Link>
                     <Link to="/case-study"><p>Case Study</p></Link>
-                    <p>Class</p>
+                    <Link to="/class"><p>Class</p></Link>
                 </div>
             </div>
         </>

@@ -1,49 +1,4 @@
 @font-face {
-    font-family: lato-100;
-    src: url("../asset/Lato/Lato-Thin.ttf");
-}
-
-.lato-100{
-    font-family: lato-100;
-}
-
-@font-face {
-    font-family: lato-300;
-    src: url("../asset/Lato/Lato-Light.ttf");
-}
-
-.lato-300{
-    font-family: lato-300;
-}
-
-@font-face {
-    font-family: lato;
-    src: url("../asset/Lato/Lato-Regular.ttf");
-}
-
-.lato{
-    font-family: lato;
-}
-
-@font-face {
-    font-family: lato-700;
-    src: url("../asset/Lato/Lato-Bold.ttf");
-}
-
-.lato-700{
-    font-family: lato-700;
-}
-
-@font-face {
-    font-family: lato-800;
-    src: url("../asset/Lato/Lato-Black.ttf");
-}
-
-.lato-800{
-    font-family: lato-800;
-}
-
-@font-face {
     font-family: poppins-100;
     src: url("../asset/Poppins/Poppins-Thin.ttf");
 }

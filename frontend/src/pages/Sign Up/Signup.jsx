@@ -7,12 +7,9 @@ import github_icon from '../../asset/icon/github.png'
 export const Signup = () => {
     return (
         <>
-            <div className='black flex flex-col items-center gap-10 pt-10 pb-20'>
-                <div className='poppins-600 text-25 letterspacing-1 flex flex-col gap-2'>
-                    <p>Welcome</p>
-                    <p>Sign Up to Project Coding</p>
-                </div>
-                <form className='poppins text-15 letterspacing-1 flex flex-col gap-5 sm:gap-10'>
+            <div className='signup black flex flex-col items-center gap-10 pt-10 pb-20'>
+                <p className='poppins-600 text-25'>Sign Up to Project Coding</p>
+                <form className='poppins text-15 flex flex-col gap-5 sm:gap-10'>
                     <div className='flex flex-col sm:flex-row gap-5 sm:gap-10'>
                         <div className='flex flex-col items-start gap-3'>
                             <label htmlFor="">Username</label>
@@ -40,7 +37,7 @@ export const Signup = () => {
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-5'>
-                        <p className='bg-purple text-white rounded-lg py-3 cursor-pointer w-full'>Sign Up</p>
+                        <p className='bg-purple text-white rounded-lg py-3 cursor-pointer w-full text-center'>Sign Up</p>
                         <div className='flex flex-col gap-10'>
                             <p>Or Sign Up with</p>
                             <div className='flex items-center gap-10'>

@@ -8,12 +8,9 @@ import github_icon from '../../asset/icon/github.png'
 export const Signin = () => {
     return (
         <>
-            <div className='black flex flex-col items-center gap-10 pt-10 pb-20'>
-                <div className='poppins-600 text-25 letterspacing-1 flex flex-col gap-2'>
-                    <p>Welcome</p>
-                    <p>Sign In to Project Coding</p>
-                </div>
-                <form className='poppins text-15 letterspacing-1 flex flex-col gap-5 sm:gap-10'>
+            <div className='signin black flex flex-col items-center gap-10 pt-10 pb-20'>
+                <p className='poppins-600 text-25'>Sign In to your account</p>
+                <form className='poppins text-15 flex flex-col gap-5 sm:gap-10'>
                     <div className='flex flex-col gap-5 sm:gap-10'>
                         <div className='flex flex-col items-start gap-3'>
                             <label htmlFor="">Username or Email</label>
@@ -28,7 +25,7 @@ export const Signin = () => {
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-5'>
-                        <p className='bg-purple text-white rounded-lg py-3 cursor-pointer w-full'>Sign In</p>
+                        <p className='bg-purple text-white rounded-lg py-3 cursor-pointer w-full text-center'>Sign In</p>
                         <Link to='/reset-password'>
                             <p className='purple hover:underline cursor-pointer text-center'>Reset Password</p>
                         </Link>
