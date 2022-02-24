@@ -8,10 +8,12 @@ import { Signup } from './Sign Up/Signup'
 import { Signin } from './Sign in/Signin'
 import { ResetPassword } from './Reset password/ResetPassword'
 import { Homepage } from './Homepage/Homepage'
-import { Tutorial } from './Tutorial/Tutorial'
+import { CategoryPage } from './Tutorial/CategoryPage'
 import { Learning } from './Tutorial/Learning/Learning'
-import CaseStudy from './Case study/CaseStudy'
-import CaseStudyDetail from './Case study/CaseStudyDetail'
+import TopicPage from './Tutorial/Topic/TopicPage'
+import CaseStudyPage from './Case study/CaseStudyPage'
+import ChallengePage from './Case study/Detail/Challenge/ChallengePage'
+import CertificatePage from './Case study/Detail/Certificate/CertificatePage'
 import Submit from './Case study/Submit/Submit'
 import Class from './Class/Class'
 
@@ -23,10 +25,12 @@ export const Index = () => {
                 <Route path="/signin" element={<Signin/>} />
                 <Route path="/signup" element={<Signup/>} />
                 <Route path="/reset-password" element={<ResetPassword/>} />
-                <Route path="/tutorial" element={<Tutorial/>} />
-                <Route path="/tutorial/learning" element={<Learning/>} />
-                <Route path="/case-study" element={<CaseStudy/>} />
-                <Route path="/case-study/detail" element={<CaseStudyDetail/>} />
+                <Route path="/category" element={<CategoryPage/>} />
+                <Route path="/category/topic" element={<TopicPage/>} />
+                <Route path="/category/learning" element={<Learning/>} />
+                <Route path="/case-study" element={<CaseStudyPage/>} />
+                <Route path="/case-study/challenge" element={<ChallengePage/>} />
+                <Route path="/case-study/certificate" element={<CertificatePage/>} />
                 <Route path="/submit" element={<Submit/>} />
                 <Route path="/class" element={<Class/>} />
             </Routes>

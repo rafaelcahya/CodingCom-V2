@@ -17,7 +17,7 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div className='flex items-start'>
-                    <Link to="/tutorial"><p>Tutorial</p></Link>
+                    <Link to="/category"><p>Tutorial</p></Link>
                     <Link to="/case-study"><p>Case Study</p></Link>
                     <Link to="/class"><p>Class</p></Link>
                 </div>
