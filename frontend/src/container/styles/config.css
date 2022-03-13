@@ -1,59 +1,60 @@
 :root{
-    --black: #495057;
-    --purple: #AB59FF;
-    --pink: #ED65FF;
-    --gray: #7d7d7d;
-
-    --green: #33DB6C
+    --black: #000;
+    --white: #fff;
+    --blue: #5463FF;
+    --secondary_text: #7D7D7D;
+    --bg_gray: #F6F6F6;
+    --border_gray: #C9C9C9;
 }
 
 /* Text color */
+.white{
+    color: var(--white);
+}
 
 .black{
     color: var(--black);
 }
 
-.gray{
-    color: var(--gray);
+.blue{
+    color: var(--blue);
 }
 
-.purple{
-    color: var(--purple);
+.secondary_text{
+    color: var(--secondary_text);
 }
 
-.green{
-    color: var(--green);
+/* background */
+
+.bg_white{
+    background: var(--white);
+}
+
+.bg_gray{
+    background: var(--bg_gray);
+}
+
+.bg_blue{
+    background: var(--blue);
+}
+
+.bg-gradient-purple-to-pink{
+    background: linear-gradient(90deg, var(--purple) 0%, var(--pink) 100%);
 }
 
 /* Font size */
 
-.text-12{
-    font-size: 12px; 
+.text_14{
+    font-size: 14px; 
 }
 
-.text-14{
-    font-size: 14px; /* 16px */
-}
-
-.text-16{
-    font-size: 16px; /* 20px */
-}
-
-.text-20{
-    font-size: 20px; /* 25px */
-}
-
-.text-25{
+.text_25{
     font-size: 25px;
-}
-
-.text-31{
-    font-size: 31px; /* 39px */
 }
 
 /* letter spacing */
 
-.letter-spacing-1{
+.letter_spacing_1{
     letter-spacing: .5px;
 }
 
@@ -63,22 +64,16 @@
     line-height: 30px;
 }
 
+/* border */
 
-/* background */
-
-.bg-gradient-purple-to-pink{
-    background: linear-gradient(90deg, var(--purple) 0%, var(--pink) 100%);
+.border_gray{
+    border: 1px solid var(--border_gray);
 }
-
-.bg-purple{
-    background: var(--purple)
-}
-
 
 /* box shadow */
 
-.box-shadow{
-    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.15);
+.box_shadow{
+    box-shadow: 0px 35px 100px rgba(0, 0, 0, 0.1)
 }
 
 /* profile group */
