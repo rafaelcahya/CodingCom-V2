@@ -1,10 +1,12 @@
 import './App.css';
-import { Index } from './prime/pages/Index';
+import Container from './container/pages/Container';
+import AppAdmin from './dashboard/admin/AppAdmin';
 
 function App() {
   return (
     <div className="App">
-      <Index/>
+      <Container/>
+      <AppAdmin/>
     </div>
   );
 }
