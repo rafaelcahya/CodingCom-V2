@@ -1,5 +1,5 @@
 import './App.css';
-import { Index } from './pages/Index';
+import { Index } from './prime/pages/Index';
 
 function App() {
   return (
