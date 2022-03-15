@@ -10,9 +10,9 @@ export default function AppAdmin() {
     return (
         <>
             <HelmetProvider>
-                <Helmet>
+                {/* <Helmet>
                     <style>{'body { background-color: #EFF1F6; }'}</style>
-                </Helmet>
+                </Helmet> */}
                 <Router>
                     <Routes>
                         <Route path="/admin" exact element={<Users/>} />
