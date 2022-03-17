@@ -4,8 +4,8 @@ const router = express.Router()
 const userModel = require('../Models/userModel')
 
 router.get("/",async (req,res)=>{
-    var fullname = "William kos"
-    
+    var fullname = "William koas"
+
     var username ="william1"
     var email = "william@gmail.com"
     var password = "william1"
