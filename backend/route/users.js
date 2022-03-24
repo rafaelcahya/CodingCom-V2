@@ -4,7 +4,7 @@ const router = express.Router()
 const userModel = require('../Models/userModel')
 
 router.get("/",async (req,res)=>{
-    var fullname = "William Kosasie"
+    var fullname = "Victor"
     var username ="william1"
     var email = "william@gmail.com"
     var password = "william1"
@@ -17,7 +17,7 @@ router.get("/",async (req,res)=>{
     var updateAt = ""
     const user = new userModel({fullname: "William Kosasie",username :"william1",email : "william@gmail.com",password : "william1",createAt : dateTime,updateAt:"", number:"087654321234"})
     try{
-        await user.insert()
+        await user.save()
         console.log("Data have been saved")
     }catch(err){
         console.log(err)

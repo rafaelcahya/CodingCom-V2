@@ -1,62 +1,62 @@
 @font-face {
-    font-family: poppins-100;
-    src: url("../asset/Poppins/Poppins-Thin.ttf");
+    font-family: inter-100;
+    src: url("../asset/Inter/Inter-Thin.ttf");
 }
 
-.poppins-100{
-    font-family: poppins-100;
-}
-
-@font-face {
-    font-family: poppins-200;
-    src: url("../asset/Poppins/Poppins-ExtraLight.ttf");
-}
-
-.poppins-200{
-    font-family: poppins-200;
+.inter_100{
+    font-family: inter-100;
 }
 
 @font-face {
-    font-family: poppins-300;
-    src: url("../asset/Poppins/Poppins-Light.ttf");
+    font-family: inter-200;
+    src: url("../asset/Inter/Inter-ExtraLight.ttf");
 }
 
-.poppins-300{
-    font-family: poppins-300;
-}
-
-@font-face {
-    font-family: poppins;
-    src: url("../asset/Poppins/Poppins-Regular.ttf");
-}
-
-.poppins{
-    font-family: poppins;
+.inter_200{
+    font-family: inter-200;
 }
 
 @font-face {
-    font-family: poppins-600;
-    src: url("../asset/Poppins/Poppins-Medium.ttf");
+    font-family: inter-300;
+    src: url("../asset/Inter/Inter-Light.ttf");
 }
 
-.poppins-600{
-    font-family: poppins-600;
-}
-
-@font-face {
-    font-family: poppins-700;
-    src: url("../asset/Poppins/Poppins-SemiBold.ttf");
-}
-
-.poppins-700{
-    font-family: poppins-700;
+.inter_300{
+    font-family: inter-300;
 }
 
 @font-face {
-    font-family: poppins-800;
-    src: url("../asset/Poppins/Poppins-Bold.ttf");
+    font-family: inter;
+    src: url("../asset/Inter/Inter-Regular.ttf");
 }
 
-.poppins-800{
-    font-family: poppins-800;
+.inter{
+    font-family: inter;
+}
+
+@font-face {
+    font-family: inter-600;
+    src: url("../asset/Inter/Inter-Medium.ttf");
+}
+
+.inter-600{
+    font-family: inter-600;
+}
+
+@font-face {
+    font-family: inter-700;
+    src: url("../asset/Inter/Inter-SemiBold.ttf");
+}
+
+.inter-700{
+    font-family: inter-700;
+}
+
+@font-face {
+    font-family: inter-800;
+    src: url("../asset/Inter/Inter-Bold.ttf");
+}
+
+.inter-800{
+    font-family: inter-800;
 }
