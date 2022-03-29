@@ -8,21 +8,24 @@ function Tutorial() {
     return (
         <>
             <Navbar/>
-            <div className='flex flex-col gap-20 letter_spacing_1'>
-                <div className='header flex flex-col gap-3 inter-600 py-12 px-5 md:px-16 lg:px-32 w-full'>
-                    <p className='text_25'>Popular category</p>
+            <div className='letter_spacing_1'>
+                <div className='inter-700 text-[48px] md:text-[71px] py-16 px-5 md:px-16 lg:px-32'>
+                    <span className='underline-animation'>Popular category</span>
                 </div>
-                <div className='flex flex-col gap-10 px-5 md:px-16 lg:px-32'>
+                <div className='flex flex-col gap-10 bg_gray2 px-5 md:px-16 lg:px-32 py-20'>
                     <div className='flex flex-col gap-3'>
-                        <p className='inter-600 text_20'>All categories</p>
+                        <p className='inter-600 text_25'>All categories</p>
                         <p className='inter secondary_text text_14'>Many categories for you to learn web development.</p>
                     </div>
                     <div className='inter flex flex-wrap justify-center sm:justify-start gap-5 md:gap-5 text_16'>
                         {
                             Array.from({length: 6}).map((_, i) => (
-                                <Link to="/tutorial/learning" className='flex items-center gap-7 px-7 py-5 rounded-lg box_shadow w-fit'>
+                                <Link to="/tutorial/learning" className='flex items-center gap-7 px-7 py-5 rounded-md bg-white w-fit hover:scale-105 duration-150'>
                                     <img src={image} alt="" width={40} />
-                                    <p>Basic internet</p>
+                                    <div className='flex flex-col gap-3'>
+                                        <p className='inter-800 red text_11 uppercase'>internet</p>
+                                        <p>Basic internet</p>
+                                    </div>
                                 </Link>
                             ))
                         }

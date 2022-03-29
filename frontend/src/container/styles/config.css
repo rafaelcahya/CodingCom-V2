@@ -2,9 +2,11 @@
     --black: #000;
     --white: #fff;
     --blue: #5463FF;
+    --red: #FD5D5D;
     --secondary_text: #7D7D7D;
     --tertiary_text: #495057;
     --bg_gray: #F6F6F6;
+    --bg_gray2: #F8F8F9;
     --border_gray: #C9C9C9;
 
     --darkmode: #02DE78;
@@ -25,6 +27,10 @@
     color: var(--blue);
 }
 
+.red{
+    color: var(--red);
+}
+
 .secondary_text{
     color: var(--secondary_text);
 }
@@ -43,11 +49,28 @@
     background: var(--bg_gray);
 }
 
+.bg_gray2{
+    background: var(--bg_gray2);
+}
+
 .bg_blue{
     background: var(--blue);
 }
 
+.bg_red{
+    background: var(--red);
+}
+
+.bg_red_hover:hover{
+    background: #f8aeae;
+}
+
 /* Font size */
+
+.text_11{
+    font-size: 11px; 
+}
+
 
 .text_14{
     font-size: 14px; 
@@ -63,6 +86,14 @@
 
 .text_25{
     font-size: 25px;
+}
+
+.text_31{
+    font-size: 31px;
+}
+
+.text_76{
+    font-size: 76px;
 }
 
 /* letter spacing */
@@ -87,6 +118,12 @@
 
 .box_shadow{
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    transition: 100ms;
+}
+
+.box_shadow:hover{
+    transition: 100ms;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .box_shadow_2{

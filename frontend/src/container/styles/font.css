@@ -3,7 +3,7 @@
     src: url("../asset/Inter/Inter-Thin.ttf");
 }
 
-.inter_100{
+.inter-100{
     font-family: inter-100;
 }
 
@@ -12,7 +12,7 @@
     src: url("../asset/Inter/Inter-ExtraLight.ttf");
 }
 
-.inter_200{
+.inter-200{
     font-family: inter-200;
 }
 
@@ -21,7 +21,7 @@
     src: url("../asset/Inter/Inter-Light.ttf");
 }
 
-.inter_300{
+.inter-300{
     font-family: inter-300;
 }
 
