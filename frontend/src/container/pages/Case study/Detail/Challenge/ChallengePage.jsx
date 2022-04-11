@@ -11,9 +11,8 @@ function ChallengePage() {
         <>
             <Navbar/>
             <div className='flex flex-col gap-20 black letter-spacing-1'>
-                <div className='bg-gradient-purple-to-pink flex flex-col items-center gap-5 text-white px-16 py-16'>
-                    <p className='poppins-600 text-31'>Challenge</p>
-                    <p className='poppins text-center w-full sm:w-3/4'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div className='bg_gray2 inter-700 text-[48px] md:text-[71px] py-16 px-5 md:px-16 lg:px-32'>
+                    <span className='underline-animation'>Challenge</span>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 sm:px-20'>
                     {

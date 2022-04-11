@@ -12,6 +12,8 @@ import Homepage from './Homepage/Homepage'
 import Tutorial from './Tutorial/Tutorial'
 import Learning from './Tutorial/learning/Learning'
 import LearningDetail from './Tutorial/learning/LearningDetail'
+import CaseStudyPage from './Case study/CaseStudyPage'
+import ChallengePage from './Case study/Detail/Challenge/ChallengePage'
 
 export default function Container() {
     return (
@@ -24,6 +26,8 @@ export default function Container() {
                 <Route path="/tutorial" element={<Tutorial/>} />
                 <Route path="/tutorial/learning" element={<Learning/>} />
                 <Route path="/tutorial/learning/nama-coursenya" element={<LearningDetail/>} />
+                <Route path="/case-study" element={<CaseStudyPage/>} />
+                <Route path="/case-study/challenge" element={<ChallengePage/>} />
             </Routes>
         </Router>
     )
