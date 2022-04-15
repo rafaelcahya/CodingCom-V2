@@ -6,7 +6,7 @@ import user_icon from '../../asset/icon/user.svg'
 export const Navbar = () => {
     return (
         <>
-            <div className='inter letter_spacing_1 black flex flex-col md:flex-row justify-between items-center gap-5 px-5 md:px-16 py-7'>
+            <div className='inter letter_spacing_1 bg-white text-black dark:text-white dark:bg-[#09080c] duration-200 flex flex-col md:flex-row justify-between items-center gap-5 px-5 md:px-16 py-7'>
                 <div className='flex flex-col md:flex-row items-center gap-5'>
                     <Link to="/">Logo</Link>
                     <div className='flex gap-10 text_14'>

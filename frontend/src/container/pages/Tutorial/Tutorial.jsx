@@ -2,33 +2,34 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar } from '../../component/major/Navbar'
 
-import image from '../../asset/Images/Standard Collection 0.png'
-
 function Tutorial() {
     return (
         <>
             <Navbar/>
             <div className='letter_spacing_1'>
-                <div className='bg_gray2 inter-700 text-[48px] md:text-[71px] py-16 px-5 md:px-16 lg:px-32'>
-                    <span className='underline-animation'>Popular category</span>
-                </div>
-                <div className='flex flex-col gap-10 px-5 md:px-16 lg:px-32 py-20'>
-                    <div className='flex flex-col gap-3'>
-                        <p className='inter-600 text_25'>All categories</p>
-                        <p className='inter secondary_text text_14'>Many categories for you to learn web development.</p>
+                <div className='bg-[#F8F8F9] text-black dark:text-white dark:bg-[#09080c] duration-300 '>
+                    <div className='inter-700 text-[48px] md:text-[71px] py-16 px-5 md:px-16 lg:px-32'>
+                        <span className='underline-animation'>Popular category</span>
                     </div>
-                    <div className='inter flex flex-wrap justify-center sm:justify-start gap-5 md:gap-5 text_16'>
-                        {
-                            Array.from({length: 6}).map((_, i) => (
-                                <Link to="/tutorial/learning" className='flex items-center gap-7 px-7 py-5 rounded-md bg-white w-fit hover:scale-105 duration-150'>
-                                    <img src={image} alt="" width={40} />
-                                    <div className='flex flex-col gap-3'>
-                                        <p className='inter-800 red text_11 uppercase'>internet</p>
-                                        <p>Basic internet</p>
-                                    </div>
-                                </Link>
-                            ))
-                        }
+                </div>
+                <div className='bg-white text-black dark:text-white dark:bg-[#100e17] duration-300'>
+                    <div className='flex flex-col gap-10 px-5 md:px-16 lg:px-32 py-20'>
+                        <div className='flex flex-col gap-3'>
+                            <p className='inter-600 text_25'>All categories</p>
+                            <p className='inter text-[#7D7D7D] dark:text-[#b4b3b3] text_14'>Many categories for you to learn web development.</p>
+                        </div>
+                        <div className='flex flex-wrap gap-10 md:gap-10'>
+                            {
+                                Array.from({length: 5}).map((_, i) => (
+                                    <Link to="/tutorial/learning" className='bg_image_dummy_tutorial relative rounded-md bg-white w-[200px] md:w-[215px] h-[250px] md:h-[290px] bg-cover shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] duration-200'>
+                                        <div className='absolute bottom-4 right-4 flex flex-col gap-2 text-right'>
+                                            <p className='inter-800 red text_11 uppercase'>internet</p>
+                                            <p className='inter-600 text-white text_20'>Basic internet</p>
+                                        </div>
+                                    </Link>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-
-import menu from '../../../../../asset/icon/menu.svg'
-import close from '../../../../../asset/icon/x.svg'
+import LearningContent from './LearningContent';
 
 const SidebarNav = styled.nav`
     left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
@@ -13,53 +11,19 @@ function LearningBar() {
     const showSidebar = () => setSidebar(!sidebar);
     return (
         <>
-            <div className='sticky lg:relative top-0 z-10 flex items-center gap-4 px-10 md:px-16 py-2 bg-white border-t border-b'>
-                <img src={menu} alt="" className='block lg:hidden' onClick={showSidebar}/>
-                <p>Fundamental of internet</p>
+            <div className='sticky lg:relative top-0 z-10 bg-white text-black dark:text-white dark:bg-[#09080c] duration-200'>
+                <div className='flex items-center gap-4 px-10 md:px-16 py-2 border-t border-b dark:border-[#23202e] duration-200'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='feather feather-menu block lg:hidden' onClick={showSidebar} stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <p>Basic Internet / Fundamental of internet</p>
+                </div>
             </div>
-            <SidebarNav className='fixed top-0 flex flex-col pl-10 bg-white w-[350px] h-screen duration-300 z-10 border-r' sidebar={sidebar}>
+            <SidebarNav className='fixed top-0 flex flex-col pl-10 bg-white text-black dark:text-white dark:bg-[#100e17] duration-200 w-[375px] h-screen z-10 border-r' sidebar={sidebar}>
                 <div className='py-5'>
-                    <img src={close} alt="" width="25" onClick={showSidebar}/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className='feather feather-x' onClick={showSidebar}><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </div>
                 <div className='flex flex-col gap-10 overflow-y-scroll h-screen'>
-                    <div className='bg_gray2 flex flex-col gap-5 inter-600 p-3 rounded-md'>
-                        <p>Run and test your code here</p>
-                        <p className='red underline hover:text-black w-fit'>Text editor</p>
-                    </div>
-                    <div className='inter text_14'>
-                        <p className='inter-600 uppercase red tracking-widest border-b pb-4'>Mastering on basic internet</p>
-                        <ul className='flex flex-col gap-4 my-4 pr-4 '>
-                            <li className='flex justify-between items-center gap-5 border-l-4 border-red-400 pl-4'>
-                                <p>Discover the WHY behind security awareness</p>
-                                <p className='text_11 secondary_text whitespace-nowrap'>15 min</p>
-                            </li>
-                            <li className='group'>
-                                <div className='group-hover:flex flex justify-between items-center gap-5'>
-                                    <p>Social engineering, what makes it work</p>
-                                    <p className='hidden group-hover:block text_11 secondary_text whitespace-nowrap'>15 min</p>
-                                </div>
-                            </li>
-                            <li>How to spot the red flags before you get duped</li>
-                            <li>Hear password best practices you can actually follow</li>
-                            <li>Learn about ransomware</li>
-                            <li>Discover safe mobile device usage</li>
-                            <li>Why securing your desk or computer is important.</li>
-                            <li>How to build up your resilience to attacks</li>
-                            <li>Learn the fast and easy process to spot a fake email.</li>
-                            <li>How to browse the Internet safely</li>
-                            <li>Spot the differences between a real email and a scam email!</li>
-                            <li>Communicate through email more securely.</li>
-                            <li>Learn to avoid accidental data leakage!</li>
-                            <li>How to create security questions that aren't easily guessed.</li>
-                            <li>Learn about typosquatting, malicious websites, and more.</li>
-                            <li>Determine which data is regulated.</li>
-                            <li>How to avoid accidental disclosure (basically data leaking).</li>
-                            <li>Be able to communicate securely and effectively.</li>
-                            <li>How to talk to your IT friends or co-workers.</li>
-                            <li>Learn the fast and easy process to spot a fake email.</li>
-                            <li>How to browse the Internet safely</li>
-                            <li>Spot the differences between a real email and a scam email!</li>
-                        </ul>
+                    <div className='py-5'>
+                        <LearningContent/>
                     </div>
                 </div>
             </SidebarNav>

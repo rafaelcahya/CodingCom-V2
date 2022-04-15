@@ -2,16 +2,13 @@
     --black: #000;
     --white: #fff;
     --blue: #5463FF;
-    --red: #FD5D5D;
+    --red: #AB59FF;
+    --green: #019267;
     --secondary_text: #7D7D7D;
     --tertiary_text: #495057;
     --bg_gray: #F6F6F6;
     --bg_gray2: #F8F8F9;
     --border_gray: #C9C9C9;
-
-    --darkmode: #02DE78;
-    --darkmode2: #191627;
-    --darkmode3: #5B69C5;
 }
 
 /* Text color */
@@ -29,6 +26,10 @@
 
 .red{
     color: var(--red);
+}
+
+.green{
+    color: var(--green);
 }
 
 .secondary_text{
@@ -127,6 +128,12 @@
 
 .box_shadow_2{
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* background image */
+
+.bg_image_dummy_tutorial{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6)), url(../asset/Images/dummy-tutorial.jpg);
 }
 
 /* truncate */

@@ -2,7 +2,7 @@ import React  from 'react'
 import LearningBar from './component/major/LearningBar'
 import { Navbar } from '../../../component/major/Navbar'
 import Leftbar from './component/major/Leftbar'
-import Rightbar from './component/major/Rightbar'
+import LearningContent from './component/major/LearningContent'
 import Tab from './component/major/Tab'
 
 import image from '../../../asset/Images/dummy-learning.jpg'
@@ -13,17 +13,17 @@ function LearningDetail() {
       <>
             <Navbar/>
             <LearningBar/>
-            <div className='flex flex-col gap-10 letter_spacing_1 px-5 md:px-16'>
+            <div className='flex flex-col gap-10 letter_spacing_1 px-5 md:px-16 bg-white text-black dark:text-[#b4b3b3] dark:bg-[#100e17] duration-200'>
                <div className='flex justify-between lg:gap-20 w-full pt-12'>
                   <div className='hidden xl:block w-1/6'><Leftbar/></div>
                   <div className='flex flex-col gap-12 w-full lg:w-8/12 px-5'>
                      <div className='flex flex-col gap-10'>
-                        <p className='inter-600 black text_31'>Fundamental of Internet</p>
+                        <p className='inter-600 text_31'>Fundamental of Internet</p>
                         <img src={image} alt="" width="400" className='rounded-md' />
                      </div>
                      <Tab/>
                   </div>
-                  <div className='hidden lg:block w-1/4'><Rightbar/></div>
+                  <div className='hidden lg:block w-1/4 sticky top-10'><LearningContent/></div>
                </div>
                <div className='flex justify-start xl:justify-center'>
                   <div className='flex flex-col w-full lg:w-7/12 px-5 xl:px-0'>
