@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import user_icon from '../../asset/icon/user.svg'
+import Toggle from '../../darkmode/ThemeToggle'
 
 export const Navbar = () => {
     return (
@@ -15,8 +16,12 @@ export const Navbar = () => {
                         <Link to="/class"><p>Class</p></Link>
                     </div>
                 </div>
-                <div className='bg-gray-200 p-3 rounded-full'>
-                    <img src={user_icon} alt="" width={15}/>
+                
+                <div className="flex items-center gap-5">
+                    <Toggle />
+                    <div className='bg-gray-200 p-3 rounded-full'>
+                        <img src={user_icon} alt="" width={15}/>
+                    </div>
                 </div>
             </div>
         </>

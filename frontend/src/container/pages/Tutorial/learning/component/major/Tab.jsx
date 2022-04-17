@@ -12,13 +12,13 @@ function Tab() {
     };
     return (
         <>
-            <div class="tabs">
+            <div className="tabs">
                 <input type="radio" id="tab1" name="tab-control" className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}/>
                 <input type="radio" id="tab2" name="tab-control"className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}/>
                 <input type="radio" id="tab3" name="tab-control"className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}/>  
                 <input type="radio" id="tab4" name="tab-control"className={toggleState === 4 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(4)}/>
 
-                <ul>
+                <ul className='text-[#495057] dark:text-white duration-200'>
                     <li title="Summary">
                         <label for="tab1" role="button"><span>Summary</span></label>
                     </li>
@@ -33,9 +33,9 @@ function Tab() {
                     </li>
                 </ul>
 
-                <div class="slider"><div class="indicator"></div></div>
+                <div className="slider"><div className="indicator"></div></div>
 
-                <div class="content-tabs">
+                <div className="content-tabs">
                     <div className={toggleState === 1 ? "content  active-content" : "content"}>
                         <Summary/>
                     </div>

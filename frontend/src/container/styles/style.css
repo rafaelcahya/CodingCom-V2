@@ -87,7 +87,6 @@
 
 .tabs ul li label {
     transition: all 0.3s ease-in-out;
-    color: var(--tertiary_text);
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;

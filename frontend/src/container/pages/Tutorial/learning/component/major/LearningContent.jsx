@@ -3,11 +3,11 @@ import React from 'react'
 function LearningContent() {
     return (
         <div className='inter text_14'>
-            <p className='inter-600 uppercase red tracking-widest border-b pb-4'>Mastering on basic internet</p>
-            <ul className='flex flex-col gap-4 my-4 pr-4 text-[#495057] dark:text-[#c2c4c6]'>
+            <p className='inter-600 uppercase text-[#AB59FF] tracking-widest border-b dark:border-[#23202e] duration-200 pb-4'>Mastering on basic internet</p>
+            <ul className='flex flex-col gap-4 my-4 pr-4 text-[#495057] dark:text-[#d2d1d1]'>
                 <li className='flex justify-between items-center gap-5 border-l-4 border-red-400 pl-4'>
                     <p>Discover the WHY behind security awareness</p>
-                    <p className='text_11 text-[#7D7D7D] dark:text-[#b4b3b3] whitespace-nowrap'>15 min</p>
+                    <p className='text_11 text-[#7D7D7D] dark:text-[#d2d1d1] whitespace-nowrap'>15 min</p>
                 </li>
                 <li className='group'>
                     <div className='group-hover:flex flex justify-between items-center gap-5'>
