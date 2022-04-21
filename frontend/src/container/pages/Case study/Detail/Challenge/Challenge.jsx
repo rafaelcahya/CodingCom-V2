@@ -20,10 +20,10 @@ function Challenge() {
                                 <img src={image} alt="" className='h-[200px] rounded-md'/>
                                 <div className='flex flex-col gap-3'>
                                     <div className='flex justify-between items-center tracking-widest'>
-                                        <p className='inter-800 uppercase text_11 red'>Internet</p>
+                                        <p className='inter-800 uppercase text-[11px] red'>Internet</p>
                                         <p className='inter text_14 green'>Easy</p>
                                     </div>
-                                    <p className='inter-700 text_16'>Basic internet</p>
+                                    <p className='inter-700 text-[16px]'>Basic internet</p>
                                     <p className='inter text_14 text-[#7D7D7D] dark:text-[#b4b3b3] line-height-1 letter_spacing_1'>The Internet (or internet)[a] is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices.</p>
                                 </div>
                             </Link>

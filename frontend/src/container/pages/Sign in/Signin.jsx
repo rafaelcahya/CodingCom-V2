@@ -9,7 +9,7 @@ export default function Signin(){
                 <div className='black bg_white mx-auto p-14 rounded-xl box_shadow w-fit'>
                     <div className='flex flex-col gap-10'>
                         <div className='flex flex-col gap-2'>
-                            <p className='inter-600 text_25 black'>Sign in</p>
+                            <p className='inter-600 text-[25px] black'>Sign in</p>
                             <p className='inter text_14 secondary_text'>Enter your credential to access your account</p>
                         </div>
                         <form className='inter text_14 flex flex-col gap-7'>

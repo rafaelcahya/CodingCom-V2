@@ -18,8 +18,8 @@ function LearningDetail() {
                   <div className='hidden xl:block w-1/5'><Leftbar/></div>
                   <div className='flex flex-col gap-12 w-full lg:w-8/12 px-5'>
                      <div className='flex flex-col gap-10'>
-                        <p className='inter-600 text_31 text-black dark:text-white duration-200'>Fundamental of Internet</p>
-                        <img src={image} alt="" width="400" className='rounded-md' />
+                        <p className='inter-600 text-[31px] text-black dark:text-white duration-200'>Fundamental of Internet</p>
+                        <img src={image} alt="" className='w-3/4 h-[300px] rounded-md' />
                      </div>
                      <Tab/>
                   </div>
@@ -27,7 +27,7 @@ function LearningDetail() {
                </div>
                <div className='flex justify-start xl:justify-center text-black dark:text-white duration-200'>
                   <div className='flex flex-col w-full lg:w-7/12 px-5 xl:px-0'>
-                     <p className='inter-600 text_25 my-10'>Reviews</p>
+                     <p className='inter-600 text-[25px] my-10'>Reviews</p>
                      <div className='flex flex-col gap-5'>
                         {
                            Array.from({length: 3}).map((_, i) => (

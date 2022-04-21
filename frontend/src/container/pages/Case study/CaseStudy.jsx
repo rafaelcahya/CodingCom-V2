@@ -17,7 +17,7 @@ export default function CaseStudy() {
                     <div className='bg-[#F8F8F9] dark:bg-[#09080c] flex flex-col gap-10 p-10 box-shadow rounded-xl w-[25rem]'>
                         <div className='flex flex-col gap-5'>
                             <img src={image} alt="" width={50} />
-                            <p className='inter-700 text_20'>Challenge</p>
+                            <p className='inter-700 text-[20px]'>Challenge</p>
                             <p className='inter'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <Link to="/case-study/challenge" className='bg-[#AB59FF] text-white px-4 py-3 rounded-xl'>Challenge</Link>
@@ -25,7 +25,7 @@ export default function CaseStudy() {
                     <div className='bg-[#F8F8F9] dark:bg-[#09080c] flex flex-col gap-10 p-10 box-shadow rounded-xl w-[25rem]'>
                         <div className='flex flex-col gap-5'>
                             <img src={image} alt="" width={50} />
-                            <p className='inter-700 text_20'>Certficate</p>
+                            <p className='inter-700 text-[20px]'>Certficate</p>
                             <p className='inter'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <Link to="/case-study/certificate"  className='bg-[#AB59FF] text-white px-4 py-3 rounded-xl'>Certificate</Link>

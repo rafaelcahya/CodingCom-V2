@@ -9,7 +9,7 @@ export default function ResetPassword(){
                 <div className='black bg_white mx-auto p-14 rounded-xl box_shadow w-fit'>
                     <div className='flex flex-col gap-10'>
                         <div className='flex flex-col gap-2'>
-                            <p className='inter-600 text_25 black'>Reset password</p>
+                            <p className='inter-600 text-[25px] black'>Reset password</p>
                             {/* <div className='flex items-center gap-1 inter text_14'>
                                 <p className='secondary_text'>Already a member?</p>
                                 <p className='blue'>Sign in</p>
