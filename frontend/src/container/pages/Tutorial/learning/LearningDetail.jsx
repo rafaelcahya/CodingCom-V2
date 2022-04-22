@@ -38,11 +38,11 @@ function LearningDetail() {
                                  <div class="flex flex-col flex-1 gap-5 px-4 py-2 sm:px-6 sm:py-4 leading-relaxed">
                                     <div className='flex items-center justify-between'>
                                        <div className='flex items-center gap-5'>
-                                          <p className='inter-600'>Raphael Yu</p>
+                                          <p className='inter-600 text-[#AB59FF]'>Raphael Yu</p>
                                        </div>
-                                       <p className='inter-600 text_14 secondary_text'>2 months ago</p>
+                                       <p className='inter-600 text-[14px]'>2 months ago</p>
                                     </div>
-                                    <p className='flex items-end inter text_14 tracking-wider leading-7 bg-[#F8F8F9] text-[#495057] dark:text-[#d2d1d1] dark:bg-[#09080c] p-3 rounded-tl-none rounded-md'>The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies.</p>
+                                    <p className='flex items-end inter text-[14px] tracking-wider leading-7 bg-[#F8F8F9] text-[#495057] dark:text-[#d2d1d1] dark:bg-[#09080c] p-3 rounded-tl-none rounded-md transform hover:translate-x-1 duration-200'>The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies.</p>
                                  </div>
                               </div>
                            ))

@@ -25,8 +25,8 @@ export default function Learning() {
                         <div className='inter flex flex-wrap gap-16'>
                             {
                                 Array.from({length: 6}).map((_, i) => (
-                                    <Link to="/tutorial/learning/nama-coursenya" className='group flex flex-col gap-5 w-[325px] bg-white dark:bg-[#09080c] p-4 rounded-md dark:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] duration-200' data-aos="fade-up">
-                                        <img src={image} alt="" className='h-[175px] rounded-md group-hover:rounded-2xl duration-200'/>
+                                    <Link to="/tutorial/learning/nama-coursenya" className='group flex flex-col gap-5 w-[325px] bg-white dark:bg-[#09080c] p-4 rounded-md dark:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] transform hover:-translate-y-1 duration-200'>
+                                        <img src={image} alt="" className='h-[175px] rounded-md'/>
                                         <div className='flex flex-col gap-3'>
                                             <div className='flex justify-between items-center tracking-widest'>
                                                 <p className='inter-800 uppercase text-[11px] text-[#AB59FF]'>Internet</p>
