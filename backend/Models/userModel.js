@@ -21,6 +21,10 @@ const UserSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
+    status:{
+        type:String,
+        required:true
+    },
     createAt:{
         type:Date,
         required:true
@@ -28,6 +32,10 @@ const UserSchema = new mongoose.Schema({
     updateAt:{
         type:Date,
         required:false
+    },
+    isDeleted:{
+        type:String,
+        required:true
     }
 
 
