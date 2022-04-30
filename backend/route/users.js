@@ -2,7 +2,8 @@ const express = require('express')
 const router = express.Router()
 const crypto = require('crypto');
 
-const userModel = require('../Models/userModel')
+const userModel = require('../Models/userModel');
+const { response } = require('express');
 
 router.post("/register", async (req,res)=>{
     const fullname = req.body.fullname
@@ -59,7 +60,20 @@ router.post("/register", async (req,res)=>{
 }
 })
 
-router.get("/login", async (req,res)=>{
+router.post("/login", async (req,res)=>{
+    const username = req.body.username
+    const password = req.body.password
+    var hash = crypto.createHash('md5').update(password).digest('hex')
+
+    userModel.find({username:username,password:hash,isDeleted:"NO"},(err,results)=>{
+        if(err || results.length<=0){
+            console.log(err)
+        }else{
+            if(username == results[0].username && hash == results[0].password){
+                res.json({In:true,code:results[0]._id})
+            }
+        }
+    })
 
 })
 
