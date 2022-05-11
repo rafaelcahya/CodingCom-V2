@@ -5,6 +5,14 @@ import { Navbar } from '../../component/major/Navbar'
 import image from '../../asset/Images/Standard Collection 0.png'
 
 function Homepage() {
+
+    if(localStorage.getItem("In") != null && localStorage.getItem("code")!=null){
+        window.onbeforeunload = function() {
+            localStorage.clear();
+            return '';
+          };
+    }
+
     return (
         <>
             <Navbar/>

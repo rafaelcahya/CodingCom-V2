@@ -8,16 +8,23 @@ export default function Signin(){
     const [errorMessage, setErrorMessage] = useState("")
 
     const Submit = ()=>{
+        if(username == "" && password == ""){
+            setErrorMessage("All form must be filled")
+        }else if(username == "" || username == null){
+            setErrorMessage("Username must be filled")
+        }else if(password == ""){
+            setErrorMessage("Password must be filled")
+        }else{
         Axios.post("http://localhost:3001/user/login", { username: username, password: password }).then((response) => {
-            if (response.data.In) {
+            if(response.data.message){
+                setErrorMessage(response.data.message)
+            }else{
                 localStorage.setItem("In", response.data.In)
                 localStorage.setItem("code", response.data.code)
                 window.location.replace("/")
-                
-            } else {
-                setErrorMessage(response.data.message)
             }
         })
+    }
     }
 
     return (
@@ -49,6 +56,7 @@ export default function Signin(){
                                 </div>
                             </div>
                         </form>
+                        <p>{errorMessage}</p>
                         <div className='bg_blue rounded-md'>
                             <p onClick={Submit} className='white text text-center py-2'>Sign in</p>
                         </div>
