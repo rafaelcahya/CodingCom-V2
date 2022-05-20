@@ -17,10 +17,8 @@ router.post("/register", async (req,res)=>{
     var dateTime = date + ' ' + time;
     var pass = crypto.createHash('md5').update(password).digest('hex')
     var isDeleted = "NO"
-    if(fullname.length<=0 && username.length<=0 && email.length<=0 && password.length<=0 && confirmpassword.length<=0){
+    if(username.length<=0 && email.length<=0 && password.length<=0 && confirmpassword.length<=0){
         res.send({message:"All forms have not been filled"})
-    }else if (fullname.length <= 0) {
-        res.send({ message: "Your fullname is not filled in" })
     } else if (username.length <= 0) {
         res.send({ message: "Your username is not filled in" })
     } else if (username.length >= 20) {
@@ -46,7 +44,7 @@ router.post("/register", async (req,res)=>{
     } else if (password.match(/[0-9]/) == null) {
         res.send({ message: "Password must contain at least 1 number" })
     } else if (confirmpassword <= 0) {
-        res.send({ message: "Please add your confirm password" })
+        res.send({ message: "Your confirm password is not filled in" })
     } else if (confirmpassword != password) {
         res.send({ message: "Confirm password must be same as password" })
     } else {
