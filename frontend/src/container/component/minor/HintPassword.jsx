@@ -22,31 +22,24 @@ export default function HintPassword() {
         <>
             <div className="flex flex-wrap">
                 <div className="w-full text-center">
-                    <button
-                        className={
-                            "bg-red-500 text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                        }
-                        type="button"
+                        <img src={help_icon} alt="" width={17} 
                         onMouseEnter={openLeftTooltip}
                         onMouseLeave={closeLeftTooltip}
-                        ref={btnRef}
-                    >
-                        <img src={help_icon} alt="" width={17} />
-                    </button>
+                        ref={btnRef}/>
                     <div
                         className={
                             (tooltipShow ? "" : "hidden ") +
-                            "bg-red-600 border-0 mt-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg"
-                          }
+                            "border-0 mt-3 block z-50 font-normal leading-normal text-sm max-w-xs text-left no-underline break-words rounded-lg"
+                            }
                         ref={tooltipRef}
                     >
                         <div>
                             <div
                                 className={
-                                    "bg-red-600 text-white opacity-75 font-semibold p-3 mb-0 border-b border-solid border-slate-100 uppercase rounded-t-lg"
-                                  }
+                                    "text-black opacity-75 font-semibold p-3 mb-0 border-b border-solid border-slate-100 rounded-t-lg"
+                                }
                             >
-                                tooltip title
+                                Password must be 8 - 20 characters
                             </div>
                         </div>
                     </div>
