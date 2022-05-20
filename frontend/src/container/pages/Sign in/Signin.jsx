@@ -40,12 +40,29 @@ export default function Signin(){
                             <p className='inter text-[#7D7D7D]'>Enter your credential to access your account</p>
                         </div>
                         <form className='inter flex flex-col gap-7'>
-                            <div className='flex flex-col gap-3 focus-within:text-[#AB59FF]'>
-                                <label htmlFor="" className='text-[14px] font-medium'>Username or Email</label>
-                                <input type="text" placeholder='Input your username or email' className='border border-[#C9C9C9] focus:border-[#AB59FF] text-black w-[350px] px-5 py-2 rounded-md outline-none' onChange={(event)=>{
-                                    setUserName(event.target.value)
-                                }}/>
-                            </div>
+                            {
+                                username === "" && password === "" ? (
+                                    <div className='flex flex-col gap-3 focus-within:text-[#AB59FF]'>
+                                        <label htmlFor="" className='text-[14px] font-medium'>Username or Email</label>
+                                        <input type="text" placeholder='Input your username or email' className='border border-[#be0505] focus:border-[#AB59FF] text-black w-[350px] px-5 py-2 rounded-md outline-none' onChange={(event)=>{
+                                            setUserName(event.target.value)
+                                        }}/>
+                                        <p>{errorMessage}</p>
+                                    </div>
+                                ) : (
+                                    <div className='flex flex-col gap-3 focus-within:text-[#AB59FF]'>
+                                        <label htmlFor="" className='text-[14px] font-medium'>Username or Email</label>
+                                        <input type="text" placeholder='Input your username or email' className='border border-[#C9C9C9] focus:border-[#AB59FF] text-black w-[350px] px-5 py-2 rounded-md outline-none' onChange={(event)=>{
+                                            setUserName(event.target.value)
+                                        }}/>
+                                        <p>{errorMessage}</p>
+                                    </div>
+                                )
+                                
+
+                            }
+
+                            
                             <div className='flex flex-col items-start gap-3 focus-within:text-[#AB59FF]'>
                                 <div className='flex justify-between items-center w-full'>
                                     <label htmlFor="">Password</label>
@@ -57,6 +74,7 @@ export default function Signin(){
                                     }}/>
                                     <HintPassword/>
                                 </div>
+                                <p>{errorMessage}</p>
                             </div>
                         </form>
                         <p onClick={Submit} className='bg-[#AB59FF] text-white text-center py-2 rounded-md cursor-pointer'>Sign in</p>
