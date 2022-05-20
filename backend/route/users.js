@@ -63,15 +63,16 @@ router.post("/login", async (req,res)=>{
     const password = req.body.password
     var hash = crypto.createHash('md5').update(password).digest('hex')
 
-    userModel.find({username:username,password:hash,isDeleted:"NO"},(err,results)=>{
-        if(err || results.length<=0){
-            console.log(err)
-        }else{
-            if(username == results[0].username && hash == results[0].password){
-                res.json({In:true,code:results[0]._id})
+        userModel.find({username:username,password:hash,isDeleted:"NO"},(err,results)=>{
+            if(err || results.length<=0){
+                console.log(err)
+                res.send({message:"Wrong Password or Username"})
+            }else{
+                if(username == results[0].username && hash == results[0].password){
+                    res.json({In:true,code:results[0]._id})
+                }
             }
-        }
-    })
+        })  
 
 })
 
