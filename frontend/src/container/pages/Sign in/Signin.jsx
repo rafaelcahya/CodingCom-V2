@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Axios from 'axios'
 
 import HintPassword from '../../component/minor/HintPassword'
@@ -40,17 +41,17 @@ export default function Signin(){
                         <form className='poppins flex flex-col gap-7'>
                             <div className='flex flex-col gap-3 focus-within:text-[#AB59FF]'>
                                 <label htmlFor="" className='text-[13px] poppins-600'>Username or Email</label>
-                                <input type="text" placeholder='Input your username or email' className='border border-[#C9C9C9] focus:border-[#AB59FF] text-black w-[350px] text-[13px] px-5 py-2 rounded-md outline-none tracking-wide' onChange={(event)=>{
+                                <input type="text" placeholder='Input your username or email' className='border border-[#C9C9C9] focus:border-[#AB59FF] text-black w-[350px] text-[13px] px-5 py-2.5 rounded-md outline-none tracking-wide' onChange={(event)=>{
                                     setUserName(event.target.value)
                                 }}/>
                             </div>
                             <div className='flex flex-col items-start gap-3 focus-within:text-[#AB59FF]'>
                                 <div className='flex justify-between items-center w-full'>
                                     <label htmlFor="" className='text-[13px] poppins-600'>Password</label>
-                                    <p className='text-[13px] poppins text-[#AB59FF] hover:underline cursor-pointer'>Forgot password ?</p>
+                                    <Link to="/forgot-password" className='text-[13px] poppins text-[#AB59FF] hover:underline cursor-pointer'>Forgot password ?</Link>
                                 </div>
-                                <div className='border border-[#C9C9C9] focus-within:border-[#AB59FF] flex items-center justify-between gap-5 w-[350px] px-1 py-1 rounded-md pr-3'>
-                                    <input type="password" placeholder='Input your confirm password' className='text-black text-[13px] px-4 py-1 w-full outline-none tracking-wide' onChange={(event)=>{
+                                <div className='border border-[#C9C9C9] focus-within:border-[#AB59FF] flex items-center justify-between gap-5 w-[350px] px-1 rounded-md pr-3'>
+                                    <input type="password" placeholder='Input your confirm password' className='text-black text-[13px] px-4 py-2.5 w-full outline-none tracking-wide' onChange={(event)=>{
                                         setPassword(event.target.value)
                                     }}/>
                                     {/* <HintPassword/> */}
@@ -59,7 +60,7 @@ export default function Signin(){
                         </form>
                         <div className='flex flex-col gap-5'>
                             <p className="poppins-600 text-[13px] text-[#FF5C58] text-center">{errorMessage}</p>
-                            <p onClick={Submit} className='poppins text-[13px] bg-[#AB59FF] text-white text-center py-2 rounded-md cursor-pointer'>Sign in</p>
+                            <p onClick={Submit} className='poppins text-[13px] bg-[#AB59FF] text-white text-center py-2.5 rounded-md cursor-pointer'>Sign in</p>
                         </div>
                     </div>
                 </div>

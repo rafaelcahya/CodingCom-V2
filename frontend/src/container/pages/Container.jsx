@@ -31,7 +31,7 @@ export default function Container() {
                     <Routes>
                         <Route path="/signin" element={<Signin/>} />
                         <Route path="/signup" element={<Signup/>} />
-                        <Route path="/reset-password" element={<ResetPassword/>} />
+                        <Route path="/forgot-password" element={<ResetPassword/>} />
                         <Route path="/" exact element={<Homepage/>} />
                         <Route path="/tutorial" element={<Tutorial/>} />
                         <Route path="/tutorial/learning" element={<Learning/>} />

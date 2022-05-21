@@ -1,19 +1,22 @@
-/* letter spacing */
-
-.letter_spacing_1{
-    letter-spacing: .5px;
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-/* Line height */
-
-.line-height-1{
-    line-height: 30px;
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
 }
 
-/* border */
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a7a7a7; 
+    border-radius: 20px;
+}
 
-.border_gray{
-    border: 1px solid var(--border_gray);
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 /* box shadow */

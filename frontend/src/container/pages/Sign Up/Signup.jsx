@@ -32,7 +32,7 @@ export default function Signup() {
 
     return (
         <>
-            <div className='bg-[#F8F8F9] text-black py-10 lg:py-24 tracking-wide h-screen'>
+            <div className='bg-[#F8F8F9] text-black py-10 tracking-wide h-screen'>
                 <div className='mx-auto p-14 rounded-xl shadow-xl w-fit'>
                     <div className='flex flex-col gap-10'>
                         <div className='flex flex-col gap-2'>
@@ -42,7 +42,7 @@ export default function Signup() {
                                 <Link to="/signin"><p className='poppins-600 text-[#AB59FF] hover:underline'>Sign in</p></Link>
                             </div>
                         </div>
-                        <form className='poppins grid grid-cols-1 lg:grid-cols-2 gap-7'>
+                        <form className='poppins flex flex-col gap-7'>
                             <div className='flex flex-col gap-3 focus-within:text-[#AB59FF]'>
                                 <label htmlFor="" className='text-[13px] poppins-600'>Username</label>
                                 <input type="text" placeholder='Input your username' className='border border-[#C9C9C9] focus:border-[#AB59FF] text-black text-[13px] w-[350px] px-5 py-2.5 rounded-md outline-none tracking-wide' onChange={(event)=>{
