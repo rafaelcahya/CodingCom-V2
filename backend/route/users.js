@@ -18,21 +18,23 @@ router.post("/register", async (req,res)=>{
     var pass = crypto.createHash('md5').update(password).digest('hex')
     var isDeleted = "NO"
     if(username.length<=0 && email.length<=0 && password.length<=0 && confirmpassword.length<=0){
-        res.send({message:"All forms have not been filled"})
+        res.send({message:"All form must be filled"})
     } else if (username.length <= 0) {
-        res.send({ message: "Your username is not filled in" })
+        res.send({ message: "Username must be filled" })
     } else if (username.length >= 20) {
         res.send({ message: "Username must be less than 20 characters" })
-    } else if (username.match(/[ ]/) != null) {
-        res.send({ message: "Your username cannot contain spaces" })
+    } else if (username.length <= 3) {
+        res.send({ message: "Username must be more than 3 characters" })
+    }else if (username.match(/[ ]/) != null) {
+        res.send({ message: "Username cannot contain spaces" })
     } else if (email.length <= 0) {
-        res.send({ message: "Your email is not filled in" })
+        res.send({ message: "Email must be filled" })
     } else if (email.match(/[@]/) == null) {
         res.send({ message: "Email is invalid" })
     } else if (email.match(/[.]/) == null) {
         res.send({ message: "Email is invalid" })
     } else if (password <= 0) {
-        res.send({ message: "Your password is not filled in" })
+        res.send({ message: "Password must be filled" })
     } else if (password.length < 8) {
         res.send({ message: "Password must be at least 8 characters" })
     } else if (password.length >= 20) {
@@ -44,7 +46,7 @@ router.post("/register", async (req,res)=>{
     } else if (password.match(/[0-9]/) == null) {
         res.send({ message: "Password must contain at least 1 number" })
     } else if (confirmpassword <= 0) {
-        res.send({ message: "Your confirm password is not filled in" })
+        res.send({ message: "Confirm password must be filled" })
     } else if (confirmpassword != password) {
         res.send({ message: "Confirm password must be same as password" })
     } else {
@@ -66,7 +68,7 @@ router.post("/login", async (req,res)=>{
         userModel.find({username:username,password:hash,isDeleted:"NO"},(err,results)=>{
             if(err || results.length<=0){
                 console.log(err)
-                res.send({message:"Wrong Password or Username"})
+                res.send({message:"Wrong Password or Username/Email"})
             }else{
                 if(username == results[0].username && hash == results[0].password){
                     res.json({In:true,code:results[0]._id})
