@@ -42,7 +42,7 @@ export default function Signup() {
                                 <Link to="/signin"><p className='poppins-600 text-[#AB59FF] hover:underline'>Sign in</p></Link>
                             </div>
                         </div>
-                        <form className='poppins flex flex-col gap-7'>
+                        <form className='poppins grid grid-cols-1 lg:grid-cols-2 gap-7'>
                             <div className='flex flex-col gap-3 focus-within:text-[#AB59FF]'>
                                 <label htmlFor="" className={
                                     `text-[13px] poppins-600 

@@ -2,42 +2,52 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Navbar } from '../../component/major/Navbar'
 
-import image from '../../asset/Images/Standard Collection 0.png'
-
 function Homepage() {
 
     if(localStorage.getItem("In") != null && localStorage.getItem("code")!=null){
         window.onbeforeunload = function() {
             localStorage.clear();
             return '';
-          };
+        };
     }
 
     return (
         <>
             <Navbar/>
-            <div className='flex flex-col gap-20 letter_spacing_1'>
-                <div className='header flex flex-col gap-3 inter-600 py-10 px-5 md:px-16 lg:px-32 w-full'>
-                    <p className='text-[20px]'>Hi Guest</p>
-                    <p className='text-[25px]'>Explore the new world of web development</p>
+            <div className='flex flex-col gap-20 py-20'>
+                <div className='flex flex-col items-start md:items-center md:text-center gap-5 py-20 px-5 md:px-16 lg:px-32 w-full tracking-wide'>
+                    <p className='poppins-700 text-[16px] uppercase text-[#AB59FF]'>Coding.com</p>
+                    <p className='poppins-700 text-[61px]'>Frontend Development</p>
+                    <p className='text-[20px] text-[#495057] w-full md:w-[750px]'>Platform for web development material from design to web hosting. Gain insights and knowledge, explore trends and understand best practices.</p>
                 </div>
-                <div className='flex flex-col gap-10 px-5 md:px-16 lg:px-32'>
-                    <div className='flex flex-col gap-3'>
-                        <p className='inter-600 text-[20px]'>Popular category</p>
-                        <p className='inter secondary_text text_14'>Many categories for you to learn web development. choose what you want</p>
-                    </div>
-                    <div className='inter flex flex-wrap justify-center sm:justify-start gap-5 text-[16px]'>
-                        {
-                            Array.from({length: 6}).map((_, i) => (
-                                <Link to="" className='flex items-center gap-7 px-7 py-5 rounded-lg box_shadow w-fit'>
-                                    <img src={image} alt="" width={40} />
-                                    <p>Basic internet</p>
-                                </Link>
-                            ))
-                        }
+                <div className='flex flex-col items-center gap-10 py-20 tracking-wide'>
+                    <p className='poppins-600 text-[25px]'>Choose you journey</p>
+                    <div className='flex flex-wrap justify-center gap-10 poppins-600 text-[16px] text-center'>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>Internet</p>
+                        </div>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>UI Design</p>
+                        </div>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>UX Design</p>
+                        </div>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>Frontend Development</p>
+                        </div>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>Backend Development</p>
+                        </div>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>Database</p>
+                        </div>
+                        <div className='w-[250px] h-[85px] py-7 hover:bg-[#AB59FF] hover:text-white rounded-md shadow-[0_35px_100px_10px_#00000019] hover:shadow-[0_35px_100px_10px_#ac59ff4c] transform hover:-translate-y-2 duration-200 cursor-pointer'>
+                            <p>Web Hosting</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </>
     )
 }
