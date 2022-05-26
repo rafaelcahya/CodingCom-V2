@@ -11,7 +11,9 @@ import profile from '../../../asset/Images/profile.png'
 function LearningDetail() {
    return (
       <>
-            <Navbar/>
+            <div className='pb-20'>
+               <Navbar/>
+            </div>
             <LearningBar/>
             <div className='flex flex-col gap-10 px-5 md:px-16 bg-white dark:bg-[#111213] duration-200'>
                <div className='flex justify-between lg:gap-10 w-full pt-12'>

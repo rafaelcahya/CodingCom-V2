@@ -9,7 +9,9 @@ import { Footer } from '../../../component/major/Footer'
 export default function Learning() {
     return (
         <>
-            <Navbar/>
+            <div className='pb-20'>
+                <Navbar/>
+            </div>
             <div className='bg-[#F8F8F9] text-black dark:text-white dark:bg-[#111213] duration-300'>
                 <div className='poppins-600 py-16 px-5 md:px-16 w-11/12 tracking-wide'>
                     <span className='underline-animation text-[48px] md:text-[71px]'>Global system of interconnected computer networks</span>
