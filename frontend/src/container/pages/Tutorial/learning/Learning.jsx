@@ -9,7 +9,7 @@ import { Footer } from '../../../component/major/Footer'
 export default function Learning() {
     return (
         <>
-            <div className='pb-20'>
+            <div className='pb-16'>
                 <Navbar/>
             </div>
             <div className='bg-[#F8F8F9] text-black dark:text-white dark:bg-[#111213] duration-300'>

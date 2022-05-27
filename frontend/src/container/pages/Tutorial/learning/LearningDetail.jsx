@@ -1,21 +1,20 @@
-import React  from 'react'
-import LearningBar from './component/major/LearningBar'
-import { Navbar } from '../../../component/major/Navbar'
+import React, { useState }  from 'react'
 import Leftbar from './component/major/Leftbar'
 import LearningContent from './component/major/LearningContent'
 import Tab from './component/major/Tab'
 
 import image from '../../../asset/Images/dummy-learning.jpg'
 import profile from '../../../asset/Images/profile.png'
+import NavbarLearning from '../../../component/major/NavbarLearning'
 
 function LearningDetail() {
+   const [isOpenAccordion, setOpenAccordion] = useState(false);
    return (
       <>
-            <div className='pb-20'>
-               <Navbar/>
+            <div className='pb-16'>
+               <NavbarLearning/>
             </div>
-            <LearningBar/>
-            <div className='flex flex-col gap-10 px-5 md:px-16 bg-white dark:bg-[#111213] duration-200'>
+            <div className='flex flex-col gap-10 px-5 md:px-16 bg-white dark:bg-[#09080c] duration-200'>
                <div className='flex justify-between lg:gap-10 w-full pt-12'>
                   <div className='hidden xl:block w-1/5'><Leftbar/></div>
                   <div className='flex flex-col gap-12 w-full lg:w-8/12 px-5'>

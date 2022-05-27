@@ -14,7 +14,7 @@
     --darkmode3: #5B69C5;
 }
 
-.modal{
+.modal, .modal-learning{
     position: fixed;
     z-index: 1;
     left: 0;
@@ -26,9 +26,13 @@
     background-color: rgba(0,0,0,0.3);
 }
 
-.modal-content {
+.modal-content, .modal-learning-content {
     margin: auto;
     height: 95%;
+}
+
+.modal-learning-content{
+    width: 450px;
 }
 
 /* header animation */

@@ -1,13 +1,11 @@
 import React from 'react'
 
-import search_icon from '../../../../../asset/icon/search.svg'
-
 function LearningContent() {
     return (
         <div className='sticky top-10 flex flex-col gap-7 poppins'>
-            <div className='bg-[#ebebec] flex items-center rounded-md px-3'>
-                <span className='pr-3'><img src={search_icon} alt="" width={17} /></span>
-                <input type="test" placeholder='Search' className='bg-[#ebebec] text-black text-[13px] py-3 outline-none tracking-wide w-full'/>
+            <div className='bg-[#F8F8F9] dark:bg-[#111213] flex items-center rounded-md px-3'>
+                <span className='pr-3'><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="stroke-black dark:stroke-white"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+                <input type="test" placeholder='Search' className='bg-[#F8F8F9] dark:bg-[#111213] text-black dark:text-white text-[13px] py-3 outline-none tracking-wide w-full'/>
             </div>
             <div>
                 <p className='poppins-600 text-[14px] uppercase text-[#AB59FF] tracking-widest border-b dark:border-[#23202e] duration-200 pb-4'>Mastering on basic internet</p>

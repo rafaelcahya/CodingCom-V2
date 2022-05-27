@@ -13,14 +13,14 @@ export const Navbar = () => {
                 <div className='flex justify-start items-center gap-5'>
                     <Link to="/">Logo</Link>
                     <div className='flex gap-10'>
-                        <p className='py-7' onClick={toggle}>Tutorial</p>
+                        <p className='py-7 text-[14px]' onClick={toggle}>Tutorial</p>
                         {
                             isOpened && (
                                 <div className='modal p-5 md:p-10 overflow-hidden duration-200'>
-                                    <div className='modal-content flex flex-col gap-5 p-5 bg-white rounded-md shadow-[0_35px_100px_10px_rgba(0, 0, 0, 0.3)] tracking-wide  '>
-                                        <div className='flex justify-between items-center poppins-600 text-[20px] border-b pb-3'>
+                                    <div className='modal-content flex flex-col gap-5 p-5 bg-[#F8F8F9] text-black dark:text-white dark:bg-[#111213] rounded-md shadow-[0_35px_100px_10px_rgba(0, 0, 0, 0.3)] tracking-wide duration-200'>
+                                        <div className='flex justify-between items-center poppins-600 text-[20px] border-b dark:border-[#23202e] pb-3'>
                                             <Link to="/tutorial" className='hover:underline'><p className=''>All tutorial</p></Link>
-                                            <span className="bg-slate-100 hover:bg-slate-200 p-3 rounded-full cursor-pointer" onClick={toggle}>
+                                            <span className="bg-slate-100 hover:bg-slate-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 p-3 rounded-full cursor-pointer" onClick={toggle}>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                                             </span>
                                         </div>
@@ -28,9 +28,9 @@ export const Navbar = () => {
                                             {
                                                 Array.from({length: 8}).map((_, i) => (
                                                     <div className='flex flex-col gap-4 w-[300px]'>
-                                                        <div className='border-b pb-3'>
+                                                        <div className='border-b dark:border-[#23202e] pb-3'>
                                                             <p className='poppins-600'>Internet</p>
-                                                            <p className='poppins text-[#7D7D7D] text-[13px]'>Basic and advance internet</p>
+                                                            <p className='poppins text-[#7D7D7D] dark:text-[#b4b3b3] text-[13px]'>Basic and advance internet</p>
                                                         </div>
                                                         <div className='flex flex-col gap-4 text-[14px]'>
                                                             <p className='hover:text-[#AB59FF] cursor-pointer'>Basic Internet</p>
@@ -39,7 +39,7 @@ export const Navbar = () => {
                                                             <p className='hover:text-[#AB59FF] cursor-pointer'>Internet of Things Business Impact</p>
                                                             <p className='hover:text-[#AB59FF] cursor-pointer'>Internet and Web Development Fundamental</p>
                                                         </div>
-                                                        <div className='flex items-center gap-1 hover:underline cursor-pointer'>
+                                                        <div className='flex items-center gap-1 hover:underline decoration-[#AB59FF] cursor-pointer'>
                                                             <p className='poppins text-[14px] text-[#AB59FF]'>View all Internet</p>
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="stroke-[#AB59FF]"><polyline points="9 18 15 12 9 6"></polyline></svg>
                                                         </div>
@@ -51,15 +51,15 @@ export const Navbar = () => {
                                 </div>
                             )
                         }
-                        <Link to="/case-study" className='hidden md:block py-7'><p>Case Study</p></Link>
-                        <Link to="/class" className='hidden md:block py-7'><p>Class</p></Link>
+                        <Link to="/case-study" className='hidden md:block py-7 text-[14px]'><p>Case Study</p></Link>
+                        <Link to="/class" className='hidden md:block py-7 text-[14px]'><p>Class</p></Link>
                     </div>
                 </div>
                 <div className="flex items-center gap-5">
                     <div className='group hover:block'>
-                        <p className='py-7'>Hello, William Kosasie</p>
-                        <div className='hidden group-hover:flex flex-col gap-5 absolute bg-white shadow-[0_35px_100px_10px_#00000019] right-5 md:right-16 p-5 rounded-md'>
-                            <div className='flex items-center justify-between gap-10 bg-white p-3 rounded-md shadow-[0_35px_100px_10px_#00000019]'>
+                        <p className='py-7 text-[14px]'>Hello, William Kosasie</p>
+                        <div className='hidden group-hover:flex flex-col gap-5 absolute z-100 bg-[#F8F8F9] text-black dark:text-white dark:bg-[#111213] duration-200 shadow-[0_35px_100px_10px_#00000019] right-5 md:right-16 p-5 rounded-md'>
+                            <div className='flex items-center justify-between gap-10 bg-[#F8F8F9] text-black dark:text-white dark:bg-[#09080c] duration-200 p-3 rounded-md shadow-[0_35px_100px_10px_#00000019]'>
                                 <div className='flex flex-col gap-1 poppins-600'>
                                     <p className='text-[14px]'>William Kosasie</p>
                                     <p className='text-[11px] text-[#FF9900]'>Premium user</p>
@@ -78,7 +78,6 @@ export const Navbar = () => {
                     </div>
                 </div>
             </div>
-            
         </>
     )
 }
