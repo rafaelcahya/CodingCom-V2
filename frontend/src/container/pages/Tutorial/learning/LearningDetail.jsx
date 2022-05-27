@@ -1,4 +1,4 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import Leftbar from './component/major/Leftbar'
 import LearningContent from './component/major/LearningContent'
 import Tab from './component/major/Tab'
@@ -8,7 +8,6 @@ import profile from '../../../asset/Images/profile.png'
 import NavbarLearning from '../../../component/major/NavbarLearning'
 
 function LearningDetail() {
-   const [isOpenAccordion, setOpenAccordion] = useState(false);
    return (
       <>
             <div className='pb-16'>
